@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.dgsw.tu.tuapplication">
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+<uses-feature android:name="android.hardware.camera" />
+<uses-permission android:name="android.permssion.CAMERA" />
+<uses-permission android:name="android.hardware.camera.autofocus" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application  android:allowBackup="true"
+                    android:icon="@mipmap/ic_launcher"
+                    android:label="@string/app_name"
+                    android:roundIcon="@mipmap/ic_launcher_round"
+                    android:supportsRtl="true"
+                    android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key" />
+
+        <activity
+                    android:name=".MyTimeLineActivity"
+                    android:screenOrientation="portrait"
+                    android:configChanges="orientation|screenSize"
+                    android:launchMode="singleTop"
+                    android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".FriendTimeLineActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+                    android:name=".TimeLineActivity"
+                    android:screenOrientation="portrait"
+                    android:configChanges="orientation|screenSize"
+                    android:launchMode="singleTop"
+                    android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+                    android:name=".LoginActivity"
+                    android:screenOrientation="portrait"
+                    android:configChanges="orientation|screenSize"
+                    android:launchMode="singleTop"
+                    android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                    android:name=".RegisterActivity"
+                    android:screenOrientation="portrait"
+                    android:configChanges="orientation|screenSize"
+                    android:launchMode="singleTop"
+                    android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+                    android:name=".ViewActivity"
+                    android:screenOrientation="portrait"
+                    android:configChanges="orientation|screenSize"
+                    android:launchMode="singleTop"
+                    android:theme="@style/Theme.Transparent">
+        </activity>
+
+        <activity
+                    android:name=".UpLoadActivity"
+                    android:screenOrientation="portrait"
+                    android:configChanges="orientation|screenSize"
+                    android:launchMode="singleTop"
+                    android:theme="@style/Theme.Transparent">
+        </activity>
+
+        <activity
+            android:name=".EditActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+
+	<activity 
+	    android:name=".EditProfileActivity"
+	    android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+	</activity>
+
+        <activity android:name=".MainActivity">
+	    </activity>
+
+        <service android:name=".FMCPushMessage.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FMCPushMessage.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.dgsw.tu.tuapplication.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

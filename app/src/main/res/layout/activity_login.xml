@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.dgsw.tu.tuapplication.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="top"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <ImageView
+                android:id="@+id/LoginLogo"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:layout_marginTop="114dp"
+                android:layout_weight="0.00"
+                app:srcCompat="@mipmap/logo_570_570" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <EditText
+                android:id="@+id/LoginId"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.00"
+                android:background="@null"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="264dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="33.67dp"
+                android:layout_weight="0.00"
+                app:srcCompat="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/LoginPw"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.00"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="264dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="61.67dp"
+                android:layout_weight="0.00"
+                app:srcCompat="@android:color/background_light" />
+
+            <ImageButton
+                android:id="@+id/SignIn"
+                android:layout_width="288dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6.6dp"
+                android:layout_weight="0.00"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:onClick="OnLoginClick"
+                app:srcCompat="@mipmap/signinbtn" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="61.67dp"
+                android:layout_weight="0.00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/footTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:text="아이디가 없다면"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="OnSignUpClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/footTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="회원가입"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/footTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="하기!"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

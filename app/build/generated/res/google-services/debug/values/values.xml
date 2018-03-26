@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">370231866453-16535sfjqfvv682g4ck4dbkrurbihahc.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://tripuseful.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">370231866453</string>
+    <string name="google_api_key" translatable="false">AIzaSyCACvlRqUGyfOnwCabR01tVUKNfQn-ZcoU</string>
+    <string name="google_app_id" translatable="false">1:370231866453:android:710b1fe652293c67</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCACvlRqUGyfOnwCabR01tVUKNfQn-ZcoU</string>
+    <string name="google_storage_bucket" translatable="false">tripuseful.appspot.com</string>
+    <string name="project_id" translatable="false">tripuseful</string>
+</resources>

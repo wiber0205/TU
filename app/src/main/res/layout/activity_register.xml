@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dgsw.tu.tuapplication.RegisterActivity"
+    android:background="@mipmap/background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="391.67dp"
+                android:layout_weight="5"
+                android:gravity="top"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="114dp">
+
+                    <ImageButton
+                        android:id="@+id/RegisterProfileImg"
+                        android:layout_width="186dp"
+                        android:layout_height="186dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:onClick="onProfileImageClick"
+                        app:srcCompat="@mipmap/dimg" />
+
+                    <ImageView
+                        android:id="@+id/RegisterProfileTae"
+                        android:layout_width="186dp"
+                        android:layout_height="186dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@mipmap/tae" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="383.84dp"
+                android:layout_weight="5"
+                android:gravity="top|bottom"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <EditText
+                    android:id="@+id/RegisterName"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.00"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/RegisterStripe"
+                    android:layout_width="248dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="33.67dp"
+                    android:layout_weight="0.00"
+                    app:srcCompat="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/RegisterId"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.00"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="ID"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="248dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="33.67dp"
+                    android:layout_weight="0.00"
+                    app:srcCompat="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/RegisterPw"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.00"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="248dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45.5dp"
+                    android:layout_weight="0.00"
+                    app:srcCompat="@android:color/background_light" />
+
+                <ImageButton
+                    android:id="@+id/Register"
+                    android:layout_width="288dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="45.5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="0.00"
+                    android:background="@android:color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:onClick="OnRegisterClick"
+                    app:srcCompat="@mipmap/register_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

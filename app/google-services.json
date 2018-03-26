@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "370231866453",
+    "firebase_url": "https://tripuseful.firebaseio.com",
+    "project_id": "tripuseful",
+    "storage_bucket": "tripuseful.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370231866453:android:710b1fe652293c67",
+        "android_client_info": {
+          "package_name": "com.dgsw.tu.tuapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370231866453-3dofkkrk2un9cr7omg8arg57j1m4n33t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dgsw.tu.tuapplication",
+            "certificate_hash": "5a89988040a69c852cb4e852bd80729ee99706a9"
+          }
+        },
+        {
+          "client_id": "370231866453-16535sfjqfvv682g4ck4dbkrurbihahc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCACvlRqUGyfOnwCabR01tVUKNfQn-ZcoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370231866453-16535sfjqfvv682g4ck4dbkrurbihahc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
